@@ -194,7 +194,6 @@ type
     cdsTabelaDetalheguia_ordem: TIntegerField;
     dsTabelaDetalhe: TDataSource;
     mr2: TSqlServerMethod;
-    btnEditRelac: TBitBtn;
     procedure btnSalvarClick(Sender: TObject);
     procedure cdsTabelaAfterPost(DataSet: TDataSet);
     procedure btnCancelarClick(Sender: TObject);
@@ -230,7 +229,6 @@ type
     procedure edtCampoPaiButtonClick(Sender: TObject);
     procedure edtTabelaFilhaButtonClick(Sender: TObject);
     procedure edtCampoFilhoButtonClick(Sender: TObject);
-    procedure btnEditRelacClick(Sender: TObject);
   private
     procedure ControleLista(value : string);
     procedure BtnColunaInsEdit;
@@ -538,11 +536,6 @@ begin
   btnCancelarColuna.Enabled := False;
   btnEditarColuna.Enabled := True;
   btnAdicionarColuna.Enabled := True;
-end;
-
-procedure TFrmCadastroTabela.btnEditRelacClick(Sender: TObject);
-begin
-//
 end;
 
 procedure TFrmCadastroTabela.btnListaLimparCampoDisplayClick(Sender: TObject);

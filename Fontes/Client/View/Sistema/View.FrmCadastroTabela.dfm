@@ -1487,15 +1487,6 @@ object FrmCadastroTabela: TFrmCadastroTabela
           TabOrder = 6
           OnClick = btnRemRelacClick
         end
-        object btnEditRelac: TBitBtn
-          Left = 168
-          Top = 108
-          Width = 75
-          Height = 25
-          Caption = 'Editar'
-          TabOrder = 7
-          OnClick = btnEditRelacClick
-        end
       end
       object Panel4: TPanel
         Left = 0
