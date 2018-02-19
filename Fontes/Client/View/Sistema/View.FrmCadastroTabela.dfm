@@ -162,7 +162,7 @@ object FrmCadastroTabela: TFrmCadastroTabela
     Top = 58
     Width = 690
     Height = 399
-    ActivePage = tsColunas
+    ActivePage = tsRelacionamento
     Align = alClient
     TabOrder = 1
     object tsPrincipal: TTabSheet
@@ -286,7 +286,7 @@ object FrmCadastroTabela: TFrmCadastroTabela
         Top = 0
         Width = 682
         Height = 332
-        ActivePage = tsCampos
+        ActivePage = tsApp
         Align = alClient
         TabOrder = 0
         object tsCampos: TTabSheet
@@ -1397,7 +1397,6 @@ object FrmCadastroTabela: TFrmCadastroTabela
         Height = 141
         Align = alTop
         TabOrder = 0
-        ExplicitTop = 8
         object Label5: TLabel
           Left = 12
           Top = 6
@@ -1480,13 +1479,22 @@ object FrmCadastroTabela: TFrmCadastroTabela
           OnClick = btnAddRelacClick
         end
         object btnRemRelac: TBitBtn
-          Left = 91
+          Left = 90
           Top = 108
           Width = 75
           Height = 25
           Caption = 'Remover'
           TabOrder = 6
           OnClick = btnRemRelacClick
+        end
+        object btnEditRelac: TBitBtn
+          Left = 168
+          Top = 108
+          Width = 75
+          Height = 25
+          Caption = 'Editar'
+          TabOrder = 7
+          OnClick = btnEditRelacClick
         end
       end
       object Panel4: TPanel
@@ -1496,8 +1504,6 @@ object FrmCadastroTabela: TFrmCadastroTabela
         Height = 229
         Align = alClient
         TabOrder = 1
-        ExplicitWidth = 776
-        ExplicitHeight = 334
         object jvdbgrd1: TJvDBGrid
           Left = 1
           Top = 1
