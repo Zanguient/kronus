@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/08/19 10:34:40.000.951,=C:\Users\kronus\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit2.pas</Transaction>
+    <Transaction>2017/08/19 10:34:41.000.990,=C:\Users\kronus\Documents\Embarcadero\Studio\Projects\ServerContainerUnit2.pas</Transaction>
+    <Transaction>2017/08/19 10:35:07.000.371,C:\Users\kronus\Documents\Embarcadero\Studio\Projects\ServerContainerUnit2.pas=C:\kronus\Projeto\Fontes\Server\uSC.pas</Transaction>
+    <Transaction>2017/08/19 10:35:07.000.371,C:\Users\kronus\Documents\Embarcadero\Studio\Projects\ServerContainerUnit2.dfm=C:\kronus\Projeto\Fontes\Server\uSC.dfm</Transaction>
+    <Transaction>2017/08/19 10:35:12.000.281,C:\Users\kronus\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit2.pas=C:\kronus\Projeto\Fontes\Server\uSM.pas</Transaction>
+    <Transaction>2017/08/19 10:35:12.000.281,C:\Users\kronus\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit2.dfm=C:\kronus\Projeto\Fontes\Server\uSM.dfm</Transaction>
+    <Transaction>2017/08/19 10:35:30.000.588,C:\Users\kronus\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\kronus\Projeto\KronusServer.dproj</Transaction>
+    <Transaction>2017/08/19 10:55:03.000.327,=C:\kronus\Projeto\Fontes\Client\Functions\Sys.Functions.pas</Transaction>
+  </Transactions>
+</BorlandProject>

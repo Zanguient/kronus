@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{65E69080-61E1-47A0-879E-306CEABA214A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Kronus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="KronusServer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Kronus">
+        <MSBuild Projects="Kronus.dproj"/>
+    </Target>
+    <Target Name="Kronus:Clean">
+        <MSBuild Projects="Kronus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Kronus:Make">
+        <MSBuild Projects="Kronus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="KronusServer">
+        <MSBuild Projects="KronusServer.dproj"/>
+    </Target>
+    <Target Name="KronusServer:Clean">
+        <MSBuild Projects="KronusServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="KronusServer:Make">
+        <MSBuild Projects="KronusServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Kronus;KronusServer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Kronus:Clean;KronusServer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Kronus:Make;KronusServer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
